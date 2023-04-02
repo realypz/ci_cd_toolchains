@@ -9,16 +9,16 @@ Build the docker image:
 # Then change to the sub folder of each individual image to be built.
 cd ./clang-format
 
-docker build --tag clang_format --rm .
+docker build --tag clang_format:latest --tag clang_format:14.0.0-ubuntu --rm .
 ```
 
 Run the image
 ```bash
 # Linux bash
-docker run --rm --volume "$(pwd)":/repo_to_check --user $(id -u):$(id -g) clang_format
+docker run --rm --volume "$(pwd)":/repo_to_check --user $(id -u):$(id -g) clang_format:latest
 
 # Windows Powershell
-docker run --rm --volume ${PWD}:/repo_to_check clang_format
+docker run --rm --volume ${PWD}:/repo_to_check clang_format:latest
 ```
 
 **Reference**:

@@ -5,7 +5,7 @@ FROM ubuntu:jammy-20220428
 LABEL maintainer="Your Name <your@email.com>"
 
 # Install clang_format and curl
-RUN apt-get update && apt-get install -y clang-format curl
+RUN apt-get update && apt-get install -y clang-format=1:14.0-55~exp2 curl
 
 # Copy the .clang-format file from the current directory
 COPY clang-format.sh .
