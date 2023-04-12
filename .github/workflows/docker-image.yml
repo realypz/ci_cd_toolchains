@@ -35,7 +35,7 @@ jobs:
       with:
         registry: ghrc.io
         username: ${{ github.actor }}
-        password: ${{ secrets.DOCKER_REGISTERY }}
+        password: ${{ secrets.GITHUB_TOKEN }}
 
     # https://github.com/marketplace/actions/build-and-push-docker-images#path-context
     - name: Build and push the Docker image
