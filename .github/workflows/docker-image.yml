@@ -31,7 +31,7 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: ghrc.io
-        username: realypz
+        username: realyp
         password: ${{ secrets.DOCKER_REGISTERY }}
 
     - name: Build and push the Docker image
