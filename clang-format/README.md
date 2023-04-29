@@ -7,9 +7,7 @@ Build the docker image:
 # First cd the repo root.
 
 # Then change to the sub folder of each individual image to be built.
-cd ./clang-format
-
-docker build --tag clang_format:latest --tag clang_format:14.0.0-ubuntu --rm .
+docker build --tag clang_format:latest --tag clang_format:14.0.0-ubuntu --rm ./clang-format
 ```
 
 Run the image
