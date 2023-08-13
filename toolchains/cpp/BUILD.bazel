@@ -47,6 +47,7 @@ toolchain(
         # target specifies the platform where the outputs will be run.
         "@platforms//cpu:x86_64",
         "@platforms//os:linux",
+        "//toolchains/cpp/platforms:clang_v1",
     ],
     toolchain = ":_clang_toolchain_a",
     toolchain_type = "@rules_cc//cc:toolchain_type",
