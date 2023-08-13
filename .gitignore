@@ -1,1 +1,5 @@
 .vscode
+bazel-bin
+bazel-ci_cd_toolchains
+bazel-out
+bazel-testlogs

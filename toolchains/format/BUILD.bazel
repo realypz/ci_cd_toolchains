@@ -1,0 +1,11 @@
+load("//toolchains/format:bazel-buildifier.bzl", "bazel_buildifier")
+
+bazel_buildifier(
+    name = "bazel_buildifier_fix",
+    mode = "fix",
+)
+
+bazel_buildifier(
+    name = "bazel_buildifier_check",
+    mode = "check",
+)
